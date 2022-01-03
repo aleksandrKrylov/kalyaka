@@ -1,0 +1,46 @@
+.content {
+    &__title {
+        width: 76.6%;
+        margin: 0 auto 120px;
+        @include font-settings(600, 60px, 68px);
+    }
+
+    &__images {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 120px;
+    }
+
+    &__img {
+        width: 24.31%;
+        margin-right: 25px;
+    }
+
+    &__img:last-child {
+        margin-right: 0;
+    }
+
+    @media screen and (max-width: 768px) {
+        &__title {
+            @include fontSize-lineHeight(33px, 37px);
+            margin-bottom: 70px;
+        }
+
+        &__images {
+            margin-bottom: 70px;
+        }
+
+        &__img {
+            width: 29.43%;
+            margin-right: 15px;
+        }
+    }
+
+    @media screen and (max-width: 425px) {
+        &__title {
+            width: 81.25%;
+            @include fontSize-lineHeight(26px, 31px);
+        }
+    }
+
+}

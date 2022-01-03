@@ -1,0 +1,125 @@
+.header {
+    margin: 10px 10px 60px;
+    padding: 2.11% 0 9.15% 11.27%;
+    border-radius: 20px;
+    background-color: $background-colorBlack;
+    position: relative;
+
+    &__logo {
+        margin: 0 0 4.23%;
+    }
+
+    &__title {
+        width: 45.77%;
+        @include font-settings(bold, 60px, 69px);
+        color: #FFFFFF;
+        margin: 0 0 1.97%;
+    }
+
+    &__subtitle {
+        width: 31.69%;
+        @include font-settings(normal, 18px, 26px);
+        color: rgba(255, 255, 255, 0.7);
+        margin: 0 0 7.61%;
+    }
+
+    &__img {
+        width: 21.9%;
+        position: absolute;
+        top: 95px;
+        right: 15.49%;
+    }
+
+    &__button {
+        width: 16.9%;
+        @include font-settings(600, 16px, 24px);
+        color: #222222;
+        padding: 15px 0 15px;
+        border-radius: 8px;
+        background-color: $background-colorForm;
+        margin: 0;
+        border-style: none;
+
+        &:hover {
+            cursor: pointer;
+            opacity: 0.93;
+        }
+    }
+
+    @media screen and (max-width: 1314px) {
+        &__title {
+            width: 316px;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        & {
+            margin-bottom: 70px;
+            padding: 4.01% 0 6.68% 6.68%;
+        }
+
+        &__logo {
+            margin: 0 0 6.68%;
+        }
+
+        &__title {
+            width: 48.13%;
+            @include fontSize-lineHeight(33px, 37px);
+            margin: 0 0 2.67%;
+        }
+
+        &__subtitle {
+            width: 48.13%;
+            @include fontSize-lineHeight(15px, 20px);
+            margin: 0 0 33.42%;
+        }
+
+        &__img {
+            width: 33.42%;
+            top: 130px;
+            right: 7.16%;
+        }
+
+        &__button {
+            width: 33.42%;
+            font-size: 14px;
+            padding: 12px 0 12px;
+            border-radius: 8px;
+        }
+
+        @media screen and (max-width: 425px) {
+            & {
+                padding: 6.67%;
+            }
+
+            &__logo {
+                margin-bottom:16.67%;
+            }
+    
+            &__title {
+                width: 100%;
+                @include fontSize-lineHeight(24px, 29px);
+                margin-bottom: 4.67%;
+            }
+    
+            &__subtitle {
+                width: 100%;
+                @include fontSize-lineHeight(12px, 15px);
+                margin-bottom: 16.67%;
+            }
+            
+            &__img {
+                position: static;
+                display: block;
+                width: 100%;
+                margin-bottom: 50px;
+            }
+
+            &__button {
+                width: 100%;
+                font-size: 12px;
+                padding: 10px 0 10px;
+            }
+        }
+    }
+}

@@ -1,0 +1,85 @@
+.footer {
+    margin: 10px 10px 10px;
+    padding: 60px 0  60px 160px;
+    border-radius: 20px;
+    background-color: $background-colorBlack;
+    position: relative;
+
+    &__title {
+        width: 32.39%;
+        margin: 0 0 20px;
+        @include font-settings(600, 32px, 38px);
+        color: $background-colorButton;
+    }
+
+    &__subtitle {
+        margin: 0 0 12.25%;
+        @include font-settings(normal, 18px, 26px);
+        color: rgba(255, 255, 255, 0.7);
+    }
+
+    &__button {
+        width: 33.1%;
+        padding: 15px 0;
+        @include font-settings(600, 16px, 24px);
+        border-radius: 8px;
+        background-color: $background-colorButton;
+        color: $background-colorBlack;
+
+        &:hover {
+            cursor: pointer;
+            opacity: 0.93;
+        }
+    }
+
+    &__img {
+        width: 22.9%;
+        position: absolute;
+        bottom: 0;
+        right: 15.49%;
+    }
+
+    @media screen and (max-width: 768px) {
+        & {
+            padding: 6.68%;
+        }
+
+        &__title {
+            width: 40.11%;
+        }
+
+        &__subtitle {
+            margin: 0 0 20.38%;
+        }
+
+        &__button {
+            width: 38.1%;
+            font-size: 14px;
+            padding: 12px 0;
+        }
+
+        &__img {
+            width: 37.9%;
+            right: 5.22%;
+        }
+    }
+
+    @media screen and (max-width: 425px) {
+        &__title {
+            width: 100%;
+            @include fontSize-lineHeight(24px, 29px);
+            margin-bottom: 14px;
+        }
+
+        &__subtitle {
+            @include fontSize-lineHeight(12px, 15px);
+            margin-bottom: 37%;
+        }
+
+        &__button {
+            width: 100%;
+            font-size: 12px;
+            padding: 10px 0;
+        }
+    }
+}
