@@ -1,0 +1,10 @@
+.cards {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 120px;
+}
+@media screen and (max-width: 768px) {
+  .cards {
+    margin-bottom: 70px;
+  }
+}/*# sourceMappingURL=cards.css.map */

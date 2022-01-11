@@ -1,0 +1,60 @@
+.card {
+    width: 37.5%;
+    margin-right: 20px;
+    padding: 40px;
+    border-radius: 20px;
+    background-color: $colorGray;
+    box-sizing: border-box;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &__subtitle {
+        @include font-settings(500, 18px, 20px);
+        margin: 0 0 4.35%;
+        color: $colorGrayCard;
+    }
+
+    &__title {
+        min-height: 76px;
+        @include font-settings(600, 32px, 38px);
+        margin: 0 0 8.7%;
+        color: $colorBlack;
+    }
+
+    &__description {
+        @include font-settings(normal, 16px, 24px);
+        margin: 0;
+        color: $colorGrayCard;
+    }
+
+    @media screen and (max-width: 900px) {
+        & {
+            width: 45.5%;
+        }
+    }
+
+    @media screen and (max-width: $widthTablet) {
+        & {
+            padding: 30px;
+        }
+
+        &__subtitle {
+            font-size: 15px;
+            margin-bottom: 4%;
+        }
+
+        &__title {
+            @include fontSize-lineHeight(26px, 31px);
+            min-height: 93px;
+            margin-bottom: 7%;
+        }
+
+        &__description {
+            @include fontSize-lineHeight(15px, 20px);
+        }
+        
+    }    
+}
+
