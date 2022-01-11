@@ -1,5 +1,5 @@
 @mixin font-settings($font-weight, $font-size, $line-height) {
-    font-family: Inter;
+    font-family: 'Inter', 'Arial', 'Helvetica', sans-serif;;
     font-style: normal;
     font-weight: $font-weight;
     font-size: $font-size;

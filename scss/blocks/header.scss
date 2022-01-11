@@ -2,7 +2,7 @@
     margin: 10px 10px 60px;
     padding: 2.11% 0 9.15% 11.27%;
     border-radius: 20px;
-    background-color: $background-colorBlack;
+    background-color: $colorDark;
     position: relative;
 
     &__logo {
@@ -12,14 +12,14 @@
     &__title {
         width: 45.77%;
         @include font-settings(bold, 60px, 69px);
-        color: #FFFFFF;
+        color: $colorWhite;
         margin: 0 0 1.97%;
     }
 
     &__subtitle {
         width: 31.69%;
         @include font-settings(normal, 18px, 26px);
-        color: rgba(255, 255, 255, 0.7);
+        color: $colorGrayText;
         margin: 0 0 7.61%;
     }
 
@@ -32,11 +32,14 @@
 
     &__button {
         width: 16.9%;
+        display: inline-block;
+        text-align: center;
+        text-decoration: none;
         @include font-settings(600, 16px, 24px);
-        color: #222222;
+        color: $colorDark;
         padding: 15px 0 15px;
         border-radius: 8px;
-        background-color: $background-colorForm;
+        background-color: $colorGray;
         margin: 0;
         border-style: none;
 
@@ -52,7 +55,7 @@
         }
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: $widthTablet) {
         & {
             margin-bottom: 70px;
             padding: 4.01% 0 6.68% 6.68%;
@@ -87,9 +90,10 @@
             border-radius: 8px;
         }
 
-        @media screen and (max-width: 425px) {
+        @media screen and (max-width: $widthTelephone) {
             & {
                 padding: 6.67%;
+                border-radius: 10px;
             }
 
             &__logo {

@@ -2,29 +2,32 @@
     margin: 10px 10px 10px;
     padding: 60px 0  60px 160px;
     border-radius: 20px;
-    background-color: $background-colorBlack;
+    background-color: $colorDark;
     position: relative;
 
     &__title {
         width: 32.39%;
         margin: 0 0 20px;
         @include font-settings(600, 32px, 38px);
-        color: $background-colorButton;
+        color: $colorWhite;
     }
 
     &__subtitle {
         margin: 0 0 12.25%;
         @include font-settings(normal, 18px, 26px);
-        color: rgba(255, 255, 255, 0.7);
+        color: $colorGrayText;
     }
 
     &__button {
         width: 33.1%;
         padding: 15px 0;
         @include font-settings(600, 16px, 24px);
+        display: inline-block;
+        text-align: center;
+        text-decoration: none;
         border-radius: 8px;
-        background-color: $background-colorButton;
-        color: $background-colorBlack;
+        background-color: $colorWhite;
+        color: $colorDark;
 
         &:hover {
             cursor: pointer;
@@ -39,7 +42,7 @@
         right: 15.49%;
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: $widthTablet) {
         & {
             padding: 6.68%;
         }
@@ -64,7 +67,7 @@
         }
     }
 
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: $widthTelephone) {
         &__title {
             width: 100%;
             @include fontSize-lineHeight(24px, 29px);
